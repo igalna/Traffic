@@ -6,6 +6,8 @@
 \usepackage{array} % for m[{x cm} in tables
 \usepackage[lofdepth,lotdepth]{subfig}
 \usepackage{colortbl}
+\usepackage{float}
+
 
 %--- for subsubsubsection
 \usepackage{titlesec}
@@ -40,27 +42,33 @@
 \newpage
 	
 \section{Introduction}
+
+
+[Todo: opening paragraph]
+
+The report have seven sections. The first section is an introduction to the project, including the background, description, objectives, scope and methodology. In the second section we will talk about the literature and application that we reviewed in the preparation of the project. The third section will explains the requirements and designs of this project. The fourth section will explains the detail implementations, from overall architecture to the each (?) of the development, including the development adjustment that we made through out the project. The fifth section will explain about the team work and the work load division. In the sixth section we will discuss about the project evaluation, such as the system test, lesson learn, and possible future works. All additional documents thats relevant will be in section seven, for instance class diagrams,package diagram and Gantt chart.
+
 \subsection{Background}
 Traffic simulation software plays an important role in defining the effective traffic management policies. A traffic policy must be simulated and verified before it is actually implemented in real life. Otherwise, it might harm road users’ safety and traffic efficiency. There are a lot of factors contributing to road accidents and traffic efficiency. The major factors include speed, traffic light timing and driver’s behaviours. For instance, in 2013, in the UK, 3,064 people were killed or seriously injured in crashes where speed was a factor.
 Therefore, this project will simulate traffic management policies focusing on those 3 main factors ie. Speed limit; Traffic light timing; Driver's behaviours. The software will test different policies relating to these factors and analyse the traffic efficiency and safety in relation to traffic density, enforcement policy and driver's behaviours.
 
 The analysis will be based on the average speed: average speed of vehicles in a session. This metric is to measure traffic efficiency and reliability.
 
-In this report, we will explain how our traffic simulator works and how the simulator implements (what we implement? what our purposes)
+In this report, we will explain how our traffic simulator program works and how it was implemented
 	
 
 
 \subsection{Objectives}
 The project aims to develop a windows standalone application to simulate traffic in different traffic policies and traffic density following UK Highway Code which is left-lane oriented. The application should allow users to simulate traffic in a single busy intersection or a larger area in town which includes multiple roads, lanes, junctions and traffic lights. Multiple types of vehicles and drivers' behaviours would be simulated. The report for each simulation session will be displayed at the end of each session to calculate metrics to evaluate traffic safety and efficiency for provided traffic scenario and policy.
 
-The application will be developed in Java technology and managed using Agile methodology. 
+
 
 
 \subsection{Scope}
 
 Within the constraints of time and resources, the project's scope includes:
 \begin{itemize}[noitemsep]
-	\item Controlled Map & Road network: User can choose multiple map options to simulate
+\item Controlled Map \& Road network: User can choose multiple map options to simulate
     \begin{itemize}[noitemsep]
 	\item Junction: Simulate within a crossroad with 2 multi-lane and multi-direction roads. There is traffic light control at the crossroad.
 	\item Town: Simulate within a larger town area which is a more complicated road network, including multiple roads, junctions, traffic lights. 
@@ -105,11 +113,11 @@ Within the constraints of time and resources, the project's scope includes:
 \end{itemize}
 \subsection{Project Approach} 
     \subsubsection{Project Management: } The project is managed using Scrum methodology. 
-    The project was managed in 4 iterations with 2-week duration. 
+    The project has 4  2-week iterations.
     The Scrum methodology gives us the following benefits:
     \begin{itemize}
     
-    \item Enhanced team communication and engagement
+    \item Enhanced team communication and collabration
     \item Quick learning cycle: realise the issues in requirements, designs and implementations early in the project. 
     \item Incremental project planning, delivery: effectively planning, monitor and control the project. It helps the team to evaluate project progress and address appropriate plan and actions to take the project back on track.
     \end{itemize}
@@ -125,7 +133,9 @@ Within the constraints of time and resources, the project's scope includes:
 
 
 
-\subsection{Project Outcome}
+\subsection{Project Outcome} \newline
+\indent The project has achieved the following:
+
 \begin{itemize}
 \item Deliverables:
 \begin{itemize}
@@ -136,30 +146,41 @@ Within the constraints of time and resources, the project's scope includes:
     \item Map: multiple map options as defined
     \item Road network: the road network design and implementation allows the scalability of the system.  
     \item Policy: allow users to multiple options to define the traffic policy as in the scope. 
-    \item Vehicles: supports multiple types of vehicles and drivers's behaviours 
-    \item Simulation engine: simulation different types of vehicles and drivers' behaviours in different map options and traffic policies, traffic scenarios. Though the simulation engine is not currently not yet implemented the speed limit policy.
+    \item Vehicles: supports multiple types of vehicles and drivers' behaviours 
+    \item Simulation engine: simulation different types of vehicles and drivers' behaviours in different map options and traffic policies, traffic scenarios. Though the simulation engine is  currently not yet implemented the speed limit policy.
     \item Report: the software provided report the each simulation session with metrics calculation as defined in the scope
 
     
     \end{itemize}
-    \item Reports: Completed Initial Report and Fina Report as required. 
+    \item Reports: Completed Initial Report and Final Report as required. 
 \end{itemize}
+\item Team members' skills development: 
+
+\indent Team members experienced and improved the following skills during working on the project:
+    Manage project using SCRUM methodology
+    ; Tasks and time management
+    ; Software design and Java development
+    ; Unit testing using JUNIT
+    ; Functional Testing
+    ; Teamwork
 
 
 \end{itemize}
 
 \section{Review}
 
-Due to the layers of complexity inherent in real-life traffic systems; where a large number of agents and random variables interact within a dynamic environment has generated a lot of research interest in the area of traffic simulation. In \cite{Pursula}, Matti Pursula sets the theoretical framework for creating traffic simulators, defining them as programs that move objects overtime, taking into account a defined set of real life conditions. Pursula surveys different types of traffic simulators and identifies three types of simulated environments: microscopic, mesoscopic and macroscopic.
+Due to the layers of complexity inherent in real-life traffic systems; where a large number of agents and random variables interact within a dynamic environment has generated a lot of research interest in the area of traffic simulation. In \cite{Pursula}, Matti Pursula sets the theoretical framework for creating traffic simulators, defining them as programs that move objects overtime, taking into account a defined set of real life conditions. Pursula surveys different types of traffic simulators and identifies three types of simulated environments: microscopic, mesoscopic and macroscopic. The paper describes two main shifts in traffic simulators; the first is that they are more network focused 
 
 
-One of the traffic simulators reviewed was by Namekawa et al \cite{NameUeda05}. Even though there was a lot of road traffic simulation developed before, almost all them were developed with specific areas so they cannot be reused for simulation in the other area. Namekawa et al tried to create a general simulation system to analyse road traffic congestion of arbitrary areas. The general traffic simulation also wished to be not too complicated, with shorter simulation process time. They modeled the road network with such variable width portions that divided into three kinds of sub-roads as two side lines and a center line and also used a model of a cell automaton as one technique to realize microscopic model road traffic simulation in a city. [PARAPHRASING NEED]. [need to add more?]
+One of the main motives for building microscopic traffic flow models is that to later integrate them to build macroscopic models. An example of a comprehensive microscopic traffic flow simulator is defined by Namekawa et al in \cite{NameUeda05Due to the prominence of purpose-specific simulators ,Namekawa's project aimed at building a general purpose database of road units, with infomation about width, road signs and general measurements. They code was designed so  that it would be resused and integrated to build a macroscopic traffic model.The model the road network with variable width proportions and different road divisions; such as sidelines and center lanes.
 
-From this system, the group got an insight to how to build the road network for a traffic simulation.  We also created different types of lanes to accommodate the traffic lane change. MiddleLane as the center line, LeftLane and RightLane as the side line. 
 
-The other paper that reviewed was by Sewall et al \cite{SewWilMer10j}. They modeled detailed 3D animations and visualization of traffic flows, fast method for efficient simulations of large-scale, real-world networks of traffic using continuum dynamics that maintains discrete vehicle information to display each vehicle.
-Sewall approached this by adapting a single-lane continuum flow model to handle multi-lane traffic by introducing a novel model of lane changes and using a discrete visual representation for each vehicle and then compared the result with agent-based methods. [I don't know what we got from here?]
+The concept of building smaller microscopic road unit and then building up to a network was something that was widely implemented in out project; we first implemented separate components such as a road, and an intersection and end up constructing a network map.
 
+Other works focused on finding methods to improve the efficiency and effectivenes of the simulation, such as the research constructed by Sewall et al \cite{SewWilMer10}. Thier paper modeled detailed 3D animations and visualization of traffic flows, fast method for efficient simulations of large-scale, real-world networks of traffic using continuum dynamics that maintains discrete vehicle information to display each vehicle.
+Sewall approached this by adapting a single-lane continuum flow model to handle multi-lane traffic by introducing a novel model of lane changes and using a discrete visual representation for each vehicle and then compared the result with agent-based methods. 
+
+Although this was not directlu relevant to our project since we neither planned to implement lane changes and 3D modelling, but it made us more concious about our decisions about flow and speed of the simulation.
 
 \newpage
 \section{Requirements and Design}
@@ -183,106 +204,181 @@ The following initial requirements come from the \textcolor{black}{\emph{Introdu
         \begin{figure}[h]
         \includegraphics[width=16cm]{usecase} \caption{Use Case} \label{uc}
         \end{figure}
-        \item Detailed Requirements 
+        \item Functional Requirements 
         \begin{itemize}
-            \item Controlled Map & Road network: User can choose multiple map options to simulate
+            \item Road Network:
+                \begin{itemize}
+                    \item Road: Must support multiple lanes and different traffic directions 
+                    \item Junctions: Must support different types of intersections such as Crossroad, T junctions 
+                    \item Traffic Light: traffic lights operate following  defined traffic policy for traffic light timing and state flow.
+                    
+                    
+                    
+                \end{itemize}
+            \item Controlled Map: Allow users to choose map options to simulate:
                  \begin{itemize}[noitemsep]
 	                    \item Junction: Simulate within a crossroad with 2 multi-lane and multi-direction roads. There is traffic light control at the crossroad.
 	                    \item Town: Simulate within a larger town area which is a more complicated road network, including multiple roads, junctions, traffic lights. 
-                    	\item Scalability: the program should allow adding more map options easily as required. 
+	                    \item Scalability: the program should allow adding more map options easily as required. 
+                    	
 	
     	\end{itemize}
 
-        \item Vehicles: Simulate multiple types of vehicles, which include at least cars and ambulances (emergency vehicle) and at least three classes of driver’s behaviours (reckless, cautious, normal).
-
+        \item Vehicles: Multiple types of vehicles (Car, Bus, Emergency). 
+            \begin{itemize}
+                \item Car: drawn in BLUE on GUI
+                \item Bus: drawn in RED on GUI
+                \item Emergency: drawn in WHITE on GUI
+            \end{itemize}
+       
+        
+        \item Drivers' Behaviours: Reckless, Cautious, Normal:
+        Reckless: drive faster than speed limit 20\%
+        ;Cautious: drive slower than speed limit 20\%
+        ;Normal: drive within +-10\% speed limit
+        
         \item Policy: the application must support at least fixed control policy (traffic light timing, speed limit). It should be scalable to variable control policy. The application provides users options to define the policy to be simulated:
             \begin{itemize}
                 \item Default: default policy, which has speed limit 60mph and traffic light timing of 10s for Green Light/Red Light/Amber Light
-                \item Random: User can simulate the policy which is randomly regenated within the user-defined range
+                \item Random: User can simulate the policy which is randomly regenerated within the user-defined range
                 \item Customised: User can manually enter value for the policy.
-    \end{itemize}
+            \end{itemize}
 
-\item Simulation engine: must test the policies with different types of vehicles and drivers' behaviours in different levels of traffic density.
-\item Report: Must provide the statistics and calculates metrics  for each simulation session as above.
-\end{itemize}
-
+        \item Simulation engine: 
+        \begin{itemize}
         
+        \item Simulate different types of vehicles in user-defined simulation configurations:
+            \begin{itemize}
+            \item Defined Policy: Speed Limit and Traffic Lights Timing
+            \item Traffic Density:
+                \begin{itemize}
+                \item HIGH: 50\% possibility there is a new vehicle generated in each simulation step
+                 \item NORMAL: 30\% possibility there is a new vehicle generated in each simulation step
+                
+                \item LOW: 10\% possibility there is a new vehicle generated in each simulation step
+                \end{itemize}
+            \item Selected Map
+            
+            
+            \end{itemize}
+        
+        \item Check the traffic context to make decision whether vehicles go straight, turn right, turn left, 3-point turn, increase speed, reduce speed or stop
+        \end{itemize}
+        
+        
+       
+        \item Report: Must provide the statistics and calculates     metrics  for each simulation session. The metrics includes:
+        \begin{itemize}
+        \item Number of vehicles exited: The more vehicle exited the map, the more efficient the traffic is 
+        \item Number of Crashes: the less number of crashes, the more traffic safety is
+        
+        \end{itemize}
+        
+
+    
+    {\bf{Non-Functional Requirements:}} 
+    \begin{itemize}
+    \item Scalability: The design and implementation of the software must support the system scalability to a more complicated map and traffic scenarios. 
+    \item Performance: The simulation session must not halt due to low performance
+    \item Reliability: Must achieve at least 90\% reliability. The system must not crash in all cases.
+    \item Maintainability: Must follow Java best practices and coding standards. 
+    
     \end{itemize}
-     Develop a simulation engine for testing traffic management
-	policies
-	\begin{itemize}[noitemsep]
-	\item Should simulate individual vehicles (cars, coaches, buses etc.)
-	operating in different parts of a road network (e.g. roundabouts,
-	multi-lane junctions).
-	\item Consider where vehicles enter road network and where they
-	leave it.
-	\item Consider individual behaviours (e.g. reckless, cautious, normal).
-	\item Consider timing of journeys (based on purpose and patterns of
-	use).
-	\item Consider support for emergency services (e.g. prioritise
-	ambulances at traffic lights).
-	\item Allow different traffic management policies to be plugged in and
-	compared.
-	\item Decide on a time granularity for the simulation (e.g. 10 seconds).
-	\item Each tick of the simulation clock will require all parts of the
-	simulation to update.
-	\item The simulation engine will record vehicle positions, new entries
-	and exits and any other data and then update the state before
-	moving to the next tick.
-	\end{itemize}
+   
+      \subsubsection{Product Roadmap}
+  From the system requirements, the product roadmap is as table below. The features are prioritised as MUST HAVE or SHOULD HAVE. MUST HAVE features must be delivered within the project scope whereas SHOULD HAVE features can be skipped if they do not fit within project time and resources  constraints.
+  
+      \begin{table}[H]
+       
+        \begin{tabular}{l|l}
+             FEATURE & PRIORITY \\ \hline
+             FT1- Road & MUST HAVE \\ \hline
+             FT2- Lane & MUST HAVE \\ \hline
+             FT3- Junction & MUST HAVE \\ \hline
+             FT4- Traffic Light & MUST HAVE \\ \hline
+             FT5- Network Manager & MUST HAVE \\ \hline
+             FT6- Junction Map & MUST HAVE \\ \hline
+             FT7- Town Map & SHOULD HAVE \\ \hline
+             FT8- Generic Vehicle & MUST HAVE \\ \hline
+             FT9- Car  & MUST HAVE \\ \hline
+             FT10- Bus & MUST HAVE \\ \hline
+             FT11- Emergency vehicle & MUST HAVE \\ \hline
+             FT12- Drivers' behaviours & MUST HAVE \\ \hline
+             FT13- Policy - fixed policy control  & MUST HAVE \\ \hline
+             FT14- Policy- Variable policy control& SHOULD HAVE \\ \hline
+             FT15- Session Manager  & MUST HAVE \\ \hline
+             FT16- Simulation Engine- get traffic context & MUST HAVE \\ \hline
+             FT17- Simulate- simulate vehicle moving straight & MUST HAVE \\ \hline
+             FT18- Simulation Engine- simulate vehicle moving at junctions& MUST HAVE \\ \hline
+             FT19- Simulation Engine- simulate vehicles at traffic lights & MUST HAVE \\ \hline
+             FT20- Simulation Engine- simulate vehicles accelerate/decelerate & SHOULD HAVE \\ \hline
+             FT21- Simulation Engine- simulate different traffic density & MUST HAVE \\ \hline
+             FT22- Simulation Engine- simulate vehicles following traffic policy & MUST HAVE \\ \hline
+             FT23- Simulation Engine- simulate different drivers' classes of behaviours & MUST HAVE \\ \hline
+             FT24- GUI- GUI Layout & MUST HAVE \\ \hline
+             FT25- GUI- User simulation settings & MUST HAVE \\ \hline
+             FT26- GUI- Draw roads & MUST HAVE \\ \hline
+             FT27- GUI - Draw junctions & MUST HAVE \\ \hline
+             FT28- GUI- Draw traffic lights & MUST HAVE \\ \hline
+             FT29- GUI- Draw vehicles & MUST HAVE \\ \hline
+             FT30- GUI- Rendering & MUST HAVE \\ \hline
+             
+             
+             
+            
+        \end{tabular}
+        \caption{Product Roadmap}
+        \label{tab:ROADMAP}
+    \end{table}
+    
+    
+        The milestone for each iteration and the functional requirement that we want to deliver can be seen in Table \ref{table:iteration} below. The class diagram from planning phase can be seen in Appendices figure \ref{fig:Planning}.
+    
+    \begin{table}[H]
+		
+		\centering
+		%\begin{tabular}{p{2.5cm}|p{4cm}|p{2.5cm}|p{2.5cm}|p{2cm}}
+		\begin{tabular}{|m{3cm}|m{2cm}|m{2cm}|m{2cm}|m{3cm}|}
+		\hline
+		\multicolumn{5}{ |>{\columncolor[gray]{0.8}}c|}{\textbf{Iterations}} \\
+		\hline
+		\textbf{Iteration 0} & \textbf{Iteration 1} & \textbf{Iteration 2} & \textbf{Iteration 3}& \textbf{Iteration 4} \\ \hline
+		
+		Requirements & FT-1 & FT-3& FT-7 & System Testing\\ \hline
+		
+		System Architecture Design & FT-2 & FT-4 & FT-14 & System Bug Fixing\\ \hline
+		
+		Component Detailed Design & FT-8 & FT-5 & FT-18 & Final Report\\ \hline
+		
+		Initial Report & FT-9 & FT-6 & FT-19 & \\ \hline
+		
+		& FT-10 & FT-12 & FT-20 & \\ \hline
+		
+		& FT-11 & FT-26 & FT-23 \\ \hline
+		
+		& FT-13 & FT-17 & FT-27 &\\ \hline
+		& FT-15 & FT-21 & FT-28 &\\ \hline
+		& FT-24 & FT-22 && \\ \hline
+		& FT-25 & FT-27&& \\ \hline
+		&FT-26  & FT-28 && \\ \hline
+		& FT-29 & FT-30 && \\ \hline
 	
+		\end{tabular}
+		\caption{Project Iteration (Planning phase)}
+		\label{table:iteration} 
+		\end{table}
+		
     
-    {\bf{Non-Functional Requirements:}} \newline
-    
+    \end{itemize}
+
+  
 	
 \subsection{Design}
 In this section we will discuss the design process for this project. On the first week after the group was formed, we 
 
-    \subsubsection{Planning}
-    We set out the following feature for this application:
-    
-    \begin{itemize}[noitemsep]
-    	\item FT-1: Map-Lane
-    	\item FT-2: Map-Junction
-    	\item FT-3: Map-Traffic Light
-    	\item FT-4: Map-Road
-    	\item FT-5: Map-Roundabout
-    	\item FT-6: Map-Network Manager
-    	\item FT-7: Map-Complex
-    		\begin{itemize}
-        	\item FT-7-1: Multiple roundabouts
-        	\item FT-7-2: Multiple roundabouts, junctions, roads and lanes
-        	\end{itemize}
-    	\item FT-8: Vehicle-Generic Vehicle
-    	\item FT-9: Vehicle-Cars
-    	\item FT-10: Vehicle-Buses
-    	\item FT-11: Vehicle-Traffic Light
-    	\item FT-12: Vehicle-Accelerate/Decelerate
-    	\item FT-13: Vehicle-Change Lane/Direction
-    	\item FT-14: Vehicle-Driver's Behaviour
-    	\item FT-15: Vehicle-Emergency
-    	\item FT-16: Policy-Fixed Speed Limit and Fixed Traffic Light Time
-    	\item FT-17: Policy-Variable Control Policy
-    	\item FT-18: GUI-Lane
-    	\item FT-19: GUI-Junction and traffic light
-    	\item FT-20: GUI-Roundabout
-    	\item FT-21: GUI-Multiple vehicles
-    	\item FT-22: GUI-Animation
-    	\item FT-23: Simulation Engine
-    	    \begin{itemize}
-        	\item FT-23-1: Simulation Engine Essential(?)
-        	\item FT-23-2: Simulation Engine Optimal(?)
-        	\end{itemize}
-    	\item FT-24: Data Log and Analysis
-   \end{itemize}
 
-\noindent We divide the feature priority to Must Have and Could Have, 
-\\
-\textbf{Must Have:} FT-1, FT-2, FT-3, FT-4, FT-6, FT-8, FT-9, FT-11, FT-12, FT-13, FT-14, FT-15, FT-16, FT-18, FT-19, FT-21, FT-22, FT-23, FT-24
-\\
-\textbf{Could Have:} FT-5, FT-10, FT-17, FT-20
-\\ \\
-The milestone for each iteration and the functional requirement that we want to deliver can be seen in Table \ref{table:iteration} below. The class diagram from planning phase can be seen in Appendices figure \ref{fig:Planning}.
+
+
 
 \begin{center}
 % \begin{table}[!htb]
@@ -309,41 +405,7 @@ The milestone for each iteration and the functional requirement that we want to 
 % 		\label{table:milestones} % used to refer this table in the text
 % 	\end{table}
 
-\begin{table}[!htb]
-		
-		\centering
-		%\begin{tabular}{p{2.5cm}|p{4cm}|p{2.5cm}|p{2.5cm}|p{2cm}}
-		\begin{tabular}{|m{3cm}|m{2cm}|m{2cm}|m{2cm}|m{3cm}|}
-		\hline
-		\multicolumn{5}{ |>{\columncolor[gray]{0.8}}c|}{\textbf{Iterations}} \\
-		\hline
-		\textbf{Iteration 0} & \textbf{Iteration 1} & \textbf{Iteration 2} & \textbf{Iteration 3}& \textbf{Iteration 4} \\ \hline
-		
-		Requirements & FT-1 & FT-5 & FT-7-2 & Final Report\\ \hline
-		
-		System Architecture Design & FT-2 & FT-7-1 & FT-10 & Final Bug Fixing\\ \hline
-		
-		Component Detailed Design & FT-3 & FT-14 & FT-17 & Final Testing\\ \hline
-		
-		Initial Report & FT-4 & FT-15 & FT-22 & \\ \hline
-		
-		& FT-6 & FT-20 & FT-23-2 & \\ \hline
-		
-		& FT-18 & FT-21 && \\ \hline
-		
-		& FT-19 & FT-24 & &\\ \hline
-		& FT-21 &&&\\ \hline
-		& FT-8 &&& \\ \hline
-		& FT-9 &&& \\ \hline
-		& FT-11 &&& \\ \hline
-		& FT-12 &&& \\ \hline
-		& FT-13 &&& \\ \hline
-		& FT-23-1 &&& \\ \hline
-		& FT-16 &&&\\ \hline
-		\end{tabular}
-		\caption{Project Iteration (Planning phase)}
-		\label{table:iteration} 
-		\end{table}
+
 \end{center}
  
  %insert class diagram
@@ -413,30 +475,62 @@ What is vehicle
 \subsubsection{Session Manager}
 The Session Manager is the software component in charge of the session steps notifications. 
 It was designed to be a monolithic component who launches notifications to any other when an arbitrary time period has passed, we will refer to this time as step. In order to accomplish the most appropriate design patterns to use are the Singleton and the Observer pattern.
-The Session Manager component is divided into two parts. One is the Session.java and the SessionManager.java. 
-The first file has the class who represents the actual object who keeps track of when a step has passed. It contains the thread safe mechanisms to increase and decrease the step size, so an external component may modify the size when convenient, allowing to speed up or slow down the beating of steps. It also contains a condition who allows an external component to pause the beating. The Session class inherits from the Java API class Observer. This means it has the pattern within ready to be used, therefore anyone could subscribe and start listening the Session notifications (the steps). For all the previous reasons, a Session object is meant to be run in its own thread, therefore it implements the Runnable interface.
-The second file is the actual Session Manager. It works as the only entry point to any component who wants to know about the session steps. In order to ensure this, it follows the Singleton pattern. The Session Manager is the only object who knows about the Session, this means it is the only one able to create an instance of a Session thread. The Session Manager exposes the Session API in a thread safe manner when needed. Whenever a components ask the Session Manager to start a Session, it launches a new Session thread if there is none already running. When a session is stopped, the Session Manager
+The Session Manager component is divided into two parts. One is the Session.java and the SessionManager.java.
 
+\begin{figure}[h]
+        \includegraphics[width=14cm]{Picture3} 
+        \centering
+        \caption{Class Diagram: Session Manager}
+        \label{cdsm}
+\end{figure}
+
+The first file has the class who represents the actual object who keeps track when a step has passed. It contains the thread safe mechanisms to increase and decrease the step size, so an external component may modify the size when convenient, allowing to speed up or slow down the beating of steps. It also contains a condition who allows an external component to pause the beating. The Session class inherits from the Java API class Observer. This means it has the pattern within ready to be used, therefore anyone could subscribe and start listening the Session notifications (the steps). For all the previous reasons, a Session object is meant to be run in its own thread, therefore it implements the Runnable interface.
+
+The second file is the actual Session Manager. It works as the only entry point to any component who wants to know about the session steps. In order to ensure this, it follows the Singleton pattern. The Session Manager is the only object who knows about the Session, this means it is the only one able to create an instance of a Session thread and subscribes to it. The Session Manager exposes the Session API in a thread safe manner when needed. Whenever a components ask the Session Manager to start a Session, it launches a new Session thread if there is none already running. When a session is stopped, the Session Manager interrupts the Session thread safely. The Session Manager class inherits from the Java API class Observer, therefore allows to the components to listen notifications from the Session thread through it.
 
 \subsubsection{Simulator Engine}
+
+The Simulator Engine acts as the control unit of our simulator program; since both the cars and the roads lack autonomy and agency, the simulator engine performs all the necessary calculations and makes decisions for car movements. The simulator engine consists of three main sub-components:
+\begin{itemize}
+
+\item \textbf{Simulation Engine} is the engine that controls the entire system and simulation, responsible for making decisions on behalf of the vehicles.
+\item \textbf{Context} keeps lists for all needed information, as well as translates the relative positions communicated by the engine to absolute coordinates in order to be drawn.
+\item \textbf{Simulation  Data} is the class for collecting all the data during the simulation iteration for analysis. This data includes the number of vehicles, the number of vehicle that succeeded to arrived at the their destination, average speed from all the vehicles, and prospective traffic estimation. The detail calculation method for the traffic estimation will be discuss in \ref{rte}.
+
+\end{itemize}
         
-\begin{itemize}[noitemsep]
-\item \textbf{Context} 
-\item \textbf{SimulationEngine} is the engine that control the entire system and simulation.
-\item \textbf{Context} is the list for all needed information.
-\item \textbf{SimulationData} is the class for collecting all the data during the simulation iteration. Data including the number of vehicles, the number of vehicle that succeeded to arrived at the their destination, average speed from all the vehicles, the number of crashed between vehicle, and the traffic estimation. The detail calculation method for the traffic estimation will be discuss in \ref{rte}.
-\end{itemize}.
+        
+The \textbf{Simulation Engine } is the main controller class that includes the core logic needed for simulation. The simulation engine utilizes the contextual lists kept by the context class. These lists include a list of active cars, their positions, junction to road mappings and traffic light to road mappings. The simulator engine uses a relative positioning system, where it references a car's position in terms of the road and lane section index it exists on, rather than using the absolute coordinate. This abstracts the simulation logic and separates it from the GUI logic. With the existence of this comprehensive contextual data, the simulator engine can achieve an omniscient presence, overseeing all cars and their respective contexts. 
+
+The simulator engine is also responsible for implementing the policy controls set by the user from the Gui. Car generation density, entry point activation, session-management controls and simulation speeds are included in the user policy. Once these policy controls are retrieved from the GUI, the simulator can begin its simulation algorithm.
+
+As shown in the flow chart in figure \ref{flow chart}, the simulation engine makes decisions for every car by carrying on a series of checks. First, the car checks if is the first iteration, automatically generating cars at the appropriate points of if it is. Then iterating on every car, it performs calculations, and informs  the context which in turn informs the GUI, so it can redraw the cars with the new coordinates. 
+
+Then by asking the car and inferring from its position, it checks if its on a junction and applies the appropriate junction logic. The junction produces a path and a path is stored inside the car for the duration of its trip on the junction. If not on a junction, and the car is not nearing the end of the road it's on, it can move according to its speed as long as there are no cars ahead of it. The Engine defines a lookAhead function by which it can query a road and know whether or not the next x lane sections are occupied or free. The lookAhead of every car is defined by the driver behaviour inherent in every car object. If a car reaches the end of the road, it can go into one of three states. The first is  if there's a traffic light that is red, the car stops. The second is if the traffic light is green or theres no traffic light, car checks the existence of a junction, asks for a path on the junction and makes sure that the next position on the junction is empty before moving. While the third case happens when a car reaches an exit point, at which it is dequed from the list of active cars and logged by the SimulationData class 
+
+
+The \textbf{Context} is a class that is part of the simulation engine logic. It represents a layer in charge of the translation of relative coordinates of the vehicles to absolute coordinates in pixels. Additionally, it provides information such as the traffic light positions. Therefore, this class serves as an information provider related to items positioning on the screen map.
+This translation is made within the move function, which determines the new position of a given car to a given new position relative to roads and lane segments. This function calculates and sets the new position in pixels within the vehicle object to be consulted by any other component later.
+The Context is meant to be updated by the Simulation Engine at every step when a simulation is running, and to be consulted by the UI layer when needed.
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=.2]{flowchart}
+    \caption{Simulator Engine Algorithm flow chart}
+    \label{flow chart}
+\end{figure}
+
 
 \subsubsection{Road Traffic Estimation} \label{rte}
-The methodology to calculate the road traffic estimation we derived from annual series of road traffic estimation that published by the Department for Transport. We simplified and did several adjustment to our simulation data to get the estimation number. Department of Transport uses manual traffic counts. this data then combined with information from a network of automatic traffic counter (ATCs) to calculate a series of annual average daily flows (AADF) for each count point. These daily flows then combined with road lengths to calculate the number of vehicle miles travelled each year by vehicle types, road category and region. In the document AADF major and minor road are separated as traffic volume is calculated differently for major and minor roads, however, for our calculation we use the simulation data. For every tick represent as 25,000,000 nanosecond, so we need 144 minutes to simulate 24 hours traffic. 
-to convert the AADFs into traffic volume we multiply AADF with the link length, we then multiply it by the number of days in the year (365) to get an annual total. Link length is the total length of the network road link in km. For each lane section that we have, we decided that it will represent 3 meter in real life. Therefore, the link length calculate that from the number of lane section in the map and we multiply it by 0.003 km. 
+The methodology to calculate the road traffic estimation we derived from annual series of road traffic estimation that published by the Department for Transport. We simplified and did several adjustment to our simulation data to get the estimation number. Department of Transport uses manual traffic counts. this data then combined with information from a network of automatic traffic counter (ATCs) to calculate a series of annual average daily flows (AADF) for each count point. These daily flows then combined with road lengths to calculate the number of vehicle miles travelled each year by vehicle types, road category and region. In the document AADF major and minor road are separated as traffic volume is calculated differently for major and minor roads, however, for our calculation we use the simulation data. For every tick represent as 1/3 second, so then we multiply each session duration with 86400 (number of second per day) to simulate 24 hours traffic. 
+To convert the AADFs into traffic volume we multiply AADF with the link length, we then multiply it by the number of days in the year (365) to get an annual total. Link length is the total length of the network road link in km. For each lane section that we have, we decided that it will represent 3 meter in real life. Therefore, the link length calculate that from the number of lane section in the map and we multiply it by 0.003 km. 
 \end{itemize}.
 	
 \subsection{Development Adjustment}
 Several functions that we planned in our iteration before that changed
 \begin{enumerate}[noitemsep]
-	\item No Vehicle Bus 
-	\item No Vehicle Emergency
 	\item No Roundabout  
 \end{enumerate}
 
@@ -451,7 +545,7 @@ We used Trello for the project management. Tasks in each iterations breaks down 
 
 In initial planning, we intend to have biweekly meeting, on Monday and Thursday. However, during development phase, we had a meeting almost three or four times a week, and increased to meet five to six times a week starting in iteration 3. We used the whatsapp group to arranged the meeting time and place. 
 
-We used sharelatex to edit our final report together. This collaboration application work better than what we did for our initial report. We divided our part for the initial report into two groups, project description and project organisation. We then worked it separately and combined it in Github. This method appeared to created a lot of problem. We had a lot of document conflicts, from five people doing the edit the same file. Sharelatex is a good solution for this problem, since the group can collaborate in parallel and stimultaniously. 
+We used sharelatex to edit our final report together. This collaboration application work better than what we did for our initial report. We divided our part for the initial report into two groups, project description and project organisation. We then worked it separately and combined it in Github. This method appeared to created a lot of problem. We had a lot of document conflicts, from five people doing the edit the same file. Sharelatex is a good solution for this problem, since the group can collaborate in parallel and simultaneously. 
 
 \subsection{Work Load Division:}
 Since the project will be relatively of small to medium size, in our initial planning, we decided that the group will facilitate job rotation at every iteration of development. This will be done to increase depth and breadth of understanding of the project by all members, as well as allow for a more flexible work distribution. In our first iteration we divided the tasks to 5 important components, such as Session Manager, Vehicle, Policy, Road, and GUI.
@@ -512,7 +606,7 @@ Engineering lessons involve things the team learned from the design, architectur
 	The iterative Scrum style methodology \cite{website:Scrum-Alliance} the team adopted for development worked well in allowing us to respond to our changing goal. As after our first iteration we were able to see our overreach and realign our development goals. As our iterations progressed we were able to better understand our own abilities and limitations yet still create working piece of usable software at the end of each iteration.
 	
 	The main learning point of overreach is to set realistic constraints, but to allow for change. So that as your team creates software they are able to take advantage of new developments and progress not only the project but also their own abilities.
-	
+		
 	\item \textbf{Vagueness of specification:}
 	
 	Similar to the problem of overreach is that of Vague Specification. Because the project had an open specification, it was the team's responsibility to whittle it down to a specific system. Initially the team was too vague about what they wanted their traffic simulator to be, too vague about the functional and non-functional requirements, too vague about what the team wanted to achieve with their product.
@@ -531,7 +625,7 @@ Engineering lessons involve things the team learned from the design, architectur
 	
 	Another Agile principle followed by the team was that of Test Driven Development (TDD) \cite{website:Intro-TDD}. The team extensively used functional testing to verify the implementation of their work. By following a cycle of 
 	
-	Write Tests - Run Tests - \textbf {\textit{FAIL}} - Write code - Run Tests - \textbf {\textit{PASS}}. 
+	Write Tests - Run Tests - \textbf {\textit{FAIL}} \rightarrow Write code - Run Tests - \textbf {\textit{PASS}}. 
 	
 	The team was able to continually verify that their implemented algorithm logic, and object design decisions were as intended by the coders.
 	
@@ -548,6 +642,8 @@ Engineering lessons involve things the team learned from the design, architectur
 	
 \end{enumerate}
 
+
+\pagebreak
 \paragraph{Teamwork}
 
 Teamwork lessons are those learned from the trial and error of working with others to complete a project that would be too big for each of us as individuals.
@@ -556,20 +652,23 @@ Teamwork lessons are those learned from the trial and error of working with othe
 	
 	\item \textbf{Communication}
 	
-	Importance of communication
+	Establishing and maintaining communication was one of the biggest lessons learned over the course of the project. The team recognized it's importance from the start, however there is a feeling that they underestimated the required amount of, and consistency of communication.
 	
-	Team communicated very well from the start, overcame constraints like time difference of classes and location by using tech and having a good sense of proirity.
+	One feature of Scrum is having a daily \textit{stand up} to discuss, what each team member has achieved, what they are looking to achieve on the forthcoming day, and what obstacles stand in their way. Due to commitments elsewhere, such as having to attend lectures and tutorials, jobs, and other university work, the team was unable to fully implement this aspect of Scrum. Many practitioners of Scrum feel that the daily stand up makes a strong contribution to the success of a project. Being able to keep up to date with the work of others and keep people aware of your own successes and struggles allows the team to gel together and work through more difficult parts of a project. Although the team held stand up progress meetings, they were perhaps not frequent enough to get the most out of them. They required team members to keep track of and to go over more than one days work so they took longer than desired, and ended up being more like traditional committee meetings often hindering rather than advancing the project.
+	
+	An important lesson the team learned from the problem with integrating established Scrum practices was the need to adapt traditional methods to suit the dynamics of each individual project. If the team could not communicate in person, they had to find ways of getting the same benefits by communicating remotely. The team made use of WhatsApp group messaging to answer the same \textit{'what i've done' - 'what i'm going to do - 'what stands in my way'} questions that would pop up at a stand up. It may be the case that communicating remotely is not as effective as in person, however when you are dealing with a group project in which team members may not be able to be together, but still have work to do, the team feels it found a good compromise by using technology to get similar benefits out of remote communication.
+	
+	A unique lesson was learned by the team through participating in this project, that of the need to find a unambiguous, concise way of saying things when communicating across cultural and language barriers. Seemingly intuitive terminology to one person, may be confusing and imprecise to another. For example, the English term \textit{'bi-weekly'} caused an issue early on because to one member of the group it meant 'every other week', but to another member of the group it meant 'twice a week'. This may seem like a trivial example, however it occurred on other occasions in more important matters, such as when creating documentation for code or when naming classes and functions. It can be difficult to recognise this as an issue until it's too late as it is perhaps embarrassing to ask someone for clarification of word that seems simple to the person using it. However the team was fortunate to learn this lesson early on, and decide to adopt a \textit{'no question is a silly question'} approach. Giving team members the confidence to ask questions helped greatly with overcoming language barriers and ambiguous language. The team feels this is an important lesson to learn, computing and technology is a global industry in which your colleagues will be from around the world. To get a first hand understanding of communicating with fellow professionals from a variety of backgrounds will allow team members to become more well rounded Software Engineers.
 	
 	\item \textbf{Division of Work}
 	
+	One issue discovered by the team was the difficulty with adequately breaking down larger components and design choices into submodules which could be tackled as Agile tasks by any member of the team. After dividing the project into larger sub projects, the goal was to then be flexible with who completed each sub module, class, or function. The team wanted to do this, firstly to mimic the way modules are broken down into tasks in professional software development, and secondly to prevent the \textit{Silo Effect} occurring in any of the sub projects. 
 	
+	For a number of sub sections this worked well, with team members being able to work on sub tasks that had originally been created by another team member. However for others there was a \textit{developer lock in} effect, whereby the team member who had originally created the task was the only one able to understand or continue developing it. For a project of this size with intuitively separable sub projects, this was not immediately a problem. As the siloing meant that each team member was effectively the \textit{Scrum Manager} for their own sub project. However the team can foresee this issue becoming more apparent as the project scales or expands. If more developers were brought in, or the project was passed on to another team, or if at some point it was taken up by future developers. The new developers could risk falling into the same silos, which for a larger project would be more problematic. The team made efforts to alleviate this issue through things like adding documentation and providing a good readme file, to give newcomers a better understanding of the code and how the project is structured.
 	
 	
 \end{enumerate}
 
-\subsubsection{Group Work Lessons Learned}
-%What we learnt about group work and working together
-@TODO
 
 \pagebreak
 \subsection{Future Work} 
@@ -691,7 +790,6 @@ Data based improvements involve giving the user greater control or access to the
 
 \section{Appendices} % ALL THE EXTRA STUFF.
 
-
 \subsection{Project Risk Table}
 @TODO
 \subsection{Class Diagrams}
@@ -737,367 +835,15 @@ Data based improvements involve giving the user greater control or access to the
 		\caption[]{Planning Class Diagrams}
 		\label{fig:Planning}
 \end{figure}
+
 \subsection{Package Diagram}
 @TODO
 \subsection{Live Application}
 @TODO
 \subsection{Gantt Chart}
 @TODO
+\end{document} %END OF REPORT
 
-
-% \begin{center}
-% \begin{longtabu} to \textwidth {|
-%     X[4,l]|
-%     X[3,c]|
-%     X[8,l]|}
-%     \hline
-%     \textbf{Author} & \textbf{Date} & \textbf{Message} \ \hline
-% retnolaras & 2016-01-24 & first commit \\ \hline
-% Daniel Mendoza & 2016-01-25 & Update README.md \\ \hline
-% retnolaras & 2016-01-28 & Initial Report \\ \hline
-% Daniel Mendoza & 2016-01-29 & Merge remote-tracking branch `origin/daniel-arturo-mendoza-patch-1' \\ \hline
-% Daniel Mendoza & 2016-01-29 & Session Manager \\ \hline
-% Daniel Mendoza & 2016-01-29 & Merge remote-tracking branch `retnolaras/master' \\ \hline
-% Daniel Mendoza & 2016-01-29 & Fixing Null pointers when starting and stopping the session. A new session object is now created every time a session starts. This session object is set to null when the session is stopped. Th garbage collector should handle it. \\ \hline
-% retnolaras & 2016-01-30 & Merge pull request \#1 from daniel-arturo-mendoza/master \\ \hline
-% igalna & 2016-02-01 & Initial Commit. \\ \hline
-% igalna & 2016-02-01 & Package renaming for improved readability \\ \hline
-% igalna & 2016-02-01 & kcl.keepitclean.test.roadnetwork \\ \hline
-% igalna & 2016-02-01 & remove .class files from changes \\ \hline
-% igalna & 2016-02-01 & .gitignore \\ \hline
-% igalna & 2016-02-01 & TestRoadNetwork \\ \hline
-% igalna & 2016-02-01 & gitignore \\ \hline
-% igalna & 2016-02-01 & removed .class files form the bin directory \\ \hline
-% igalna & 2016-02-01 & .gitignore \\ \hline
-% igalna & 2016-02-01 & added bin folder to gitignore \\ \hline
-% igalna & 2016-02-01 & Lane Section is the base object of a road network. \\ \hline
-% retnolaras & 2016-02-02 & new initial report \\ \hline
-% retnolaras & 2016-02-02 & section 1.3 and 1.4 \\ \hline
-% Daniel Mendoza & 2016-02-02 & Merge remote-tracking branch `retnolaras/master' \\ \hline
-% retnolaras & 2016-02-03 & Merge pull request \#2 from igalna/master \\ \hline
-% retnolaras & 2016-02-03 & section 1.1 \\ \hline
-% retnolaras & 2016-02-03 & coordinate and vehicle class \\ \hline
-% retnolaras & 2016-02-03 & etc \\ \hline
-% retnolaras & 2016-02-03 & Merge remote-tracking branch `origin/master' \\ \hline
-% Daniel Mendoza & 2016-02-03 & adding info tom management, technical and test approaches. \\ \hline
-% Daniel Mendoza & 2016-02-03 & Scrum \\ \hline
-% Daniel Mendoza & 2016-02-03 & Merge remote-tracking branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-02-03 & Merge pull request \#3 from daniel-arturo-mendoza/master \\ \hline
-% Daniel Mendoza & 2016-02-03 & Roles \\ \hline
-% Daniel Mendoza & 2016-02-03 & Merge branch `master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-02-03 & Technology and Quality \\ \hline
-% Daniel Mendoza & 2016-02-03 & Merge remote-tracking branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-02-04 & Merge pull request \#4 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% AbdoHassan1994 & 2016-02-04 & Create InitialReportGP.tex \\ \hline
-% retnolaras & 2016-02-04 & delete some stuff from 1.1 and 1.2 \\ \hline
-% Daniel Mendoza & 2016-02-04 & Merge remote-tracking branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-02-04 & summarize \\ \hline
-% retnolaras & 2016-02-04 & edit 1.1 \\ \hline
-% retnolaras & 2016-02-04 & Merge pull request \#6 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-02-04 & Revert ``delete some stuff from 1.1 and 1.2'' \\ \hline
-% retnolaras & 2016-02-04 & new \\ \hline
-% retnolaras & 2016-02-04 & Merge remote-tracking branch `origin/master' \\ \hline
-% AbdoHassan1994 & 2016-02-04 & Create InitialReportGP.tex \\ \hline
-% retnolaras & 2016-02-04 & ignore pdf file \\ \hline
-% AbdoHassan1994 & 2016-02-04 & Create InitialReportGP.tex \\ \hline
-% retnolaras & 2016-02-04 & Merge pull request \#7 from AbdoHassan1994/patch-1 \\ \hline
-% retnolaras & 2016-02-04 & remove table 1. \\ \hline
-% retnolaras & 2016-02-04 & remove table 1 and edit 1.3 \\ \hline
-% retnolaras & 2016-02-04 & merge stuff \\ \hline
-% igalna & 2016-02-04 & Updated Initial report with section relating to handling the peer assessment \\ \hline
-% igalna & 2016-02-04 & Initial report log files \\ \hline
-% retnolaras & 2016-02-05 & Merge pull request \#8 from igalna/master \\ \hline
-% retnolaras & 2016-02-05 & newest merge \\ \hline
-% Daniel Mendoza & 2016-02-05 & Merge remote-tracking branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% igalna & 2016-02-05 & Added the Conflict resolution section of the Initial Report Document \\ \hline
-% igalna & 2016-02-05 & .log file for Initialreport \\ \hline
-% retnolaras & 2016-02-06 & compacting the table \\ \hline
-% retnolaras & 2016-02-06 & - \\ \hline
-% retnolaras & 2016-02-06 & - \\ \hline
-% retnolaras & 2016-02-06 & Delete InitialReportGP.pdf \\ \hline
-% retnolaras & 2016-02-06 & Merge remote-tracking branch `origin/master' \\ \hline
-% retnolaras & 2016-02-06 & Merge branch `pr/5' \\ \hline
-% retnolaras & 2016-02-06 & Merge remote-tracking branch `origin/master' \\ \hline
-% retnolaras & 2016-02-06 & add conflict handling \\ \hline
-% retnolaras & 2016-02-08 & correcting typos \\ \hline
-% igalna & 2016-02-08 & Merge remote-tracking branch `upstream/master' \\ \hline
-% AbdoHassan1994 & 2016-02-08 & Merge remote-tracking branch `retnolaras/master' \\ \hline
-% AbdoHassan1994 & 2016-02-08 & summary \\ \hline
-% retnolaras & 2016-02-08 & Merge pull request \#10 from AbdoHassan1994/master \\ \hline
-% Daniel Mendoza & 2016-02-08 & adding comments 1 \\ \hline
-% Daniel Mendoza & 2016-02-08 & Merge remote-tracking branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% igalna & 2016-02-08 & Merge remote-tracking branch `upstream/master' \\ \hline
-% igalna & 2016-02-08 & updated local repo from master \\ \hline
-% retnolaras & 2016-02-08 & edited initial progress \\ \hline
-% rosiengo & 2016-02-08 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% retnolaras & 2016-02-08 & edited typo \\ \hline
-% Daniel Mendoza & 2016-02-08 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-02-08 & changed some terms \\ \hline
-% retnolaras & 2016-02-08 & Merge pull request \#11 from rosiengo/master \\ \hline
-% rosiengo & 2016-02-09 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% rosiengo & 2016-02-09 & policy \\ \hline
-% rosiengo & 2016-02-09 & policy test \\ \hline
-% AbdoHassan1994 & 2016-02-09 & Merge pull request \#1 from retnolaras/master \\ \hline
-% AbdoHassan1994 & 2016-02-09 & added sentences \\ \hline
-% retnolaras & 2016-02-09 & Merge pull request \#13 from AbdoHassan1994/master \\ \hline
-% rosiengo & 2016-02-10 & uml policy \\ \hline
-% rosiengo & 2016-02-10 & updated policy code \\ \hline
-% retnolaras & 2016-02-10 & Merge pull request \#12 from rosiengo/master \\ \hline
-% igalna & 2016-02-10 & Merge remote-tracking branch `upstream/master' \\ \hline
-% Daniel Mendoza & 2016-02-10 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% AbdoHassan1994 & 2016-02-15 & Merge remote-tracking branch `retnolaras/master' \\ \hline
-% rosiengo & 2016-02-15 & new policy \\ \hline
-% AbdoHassan1994 & 2016-02-15 & Create readme \\ \hline
-% igalna & 2016-02-15 & Rename of TestRoadNetwork to TestLaneSection \\ \hline
-% igalna & 2016-02-15 & TestLaneSection \\ \hline
-% AbdoHassan1994 & 2016-02-15 & add files \\ \hline
-% igalna & 2016-02-15 & AbstractLaneSection \\ \hline
-% igalna & 2016-02-15 & Concrete implementations of the different LaneSections \\ \hline
-% retnolaras & 2016-02-15 & Merge pull request \#14 from rosiengo/master \\ \hline
-% retnolaras & 2016-02-15 & Merge pull request \#15 from AbdoHassan1994/patch-2 \\ \hline
-% igalna & 2016-02-15 & LaneFactory class \\ \hline
-% Daniel Mendoza & 2016-02-15 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% igalna & 2016-02-15 & Merge remote-tracking branch `upstream/master' \\ \hline
-% retnolaras & 2016-02-15 & Merge pull request \#16 from igalna/master \\ \hline
-% rosiengo & 2016-02-15 & NEW POLICY \\ \hline
-% rosiengo & 2016-02-15 & ADD COMMENTS FOR USAGE GUIDELINES \\ \hline
-% retnolaras & 2016-02-15 & Merge pull request \#17 from rosiengo/master \\ \hline
-% Daniel Mendoza & 2016-02-16 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% igalna & 2016-02-16 & Amended Package structure \\ \hline
-% retnolaras & 2016-02-18 & move some class \\ \hline
-% Daniel Mendoza & 2016-02-18 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% igalna & 2016-02-19 & Test cases for Roads \\ \hline
-% igalna & 2016-02-19 & Tests for Road \\ \hline
-% igalna & 2016-02-19 & LaneSection \\ \hline
-% igalna & 2016-02-19 & RoadFactory \\ \hline
-% igalna & 2016-02-19 & Implementation of a Road \\ \hline
-% igalna & 2016-02-19 & Vehicle implementation with a concrete instead of Abstract Vehicle \\ \hline
-% igalna & 2016-02-19 & Merge remote-tracking branch `upstream/master' \\ \hline
-% retnolaras & 2016-02-19 & Merge pull request \#18 from igalna/master \\ \hline
-% Daniel Mendoza & 2016-02-20 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-02-21 & Synchronization and test cases. \\ \hline
-% AbdoHassan1994 & 2016-02-21 & Merge pull request \#2 from AbdoHassan1994/files \\ \hline
-% Daniel Mendoza & 2016-02-21 & Moving file into another package. \\ \hline
-% retnolaras & 2016-02-21 & vehicle factory \\ \hline
-% Daniel Mendoza & 2016-02-21 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-02-21 & Merge pull request \#19 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-02-21 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-02-21 & VehicleType \\ \hline
-% Daniel Mendoza & 2016-02-21 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-02-21 & change Road to Lane \\ \hline
-% Daniel Mendoza & 2016-02-21 & Indentation changes. Implementing Singleton Pattern. \\ \hline
-% Daniel Mendoza & 2016-02-21 & Lane Factory \\ \hline
-% Daniel Mendoza & 2016-02-21 & Simulator Engine \\ \hline
-% Daniel Mendoza & 2016-02-21 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% rosiengo & 2016-02-22 & Merge pull request \#1 from retnolaras/master \\ \hline
-% rosiengo & 2016-02-22 & update policy code and test \\ \hline
-% retnolaras & 2016-02-22 & Merge pull request \#20 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% rosiengo & 2016-02-22 & test \\ \hline
-% retnolaras & 2016-02-22 & Merge pull request \#23 from AbdoHassan1994/master \\ \hline
-% AbdoHassan1994 & 2016-02-22 & Added initial Code for GUI component. \\ \hline
-% retnolaras & 2016-02-22 & Merge pull request \#24 from AbdoHassan1994/master \\ \hline
-% Daniel Mendoza & 2016-02-22 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% AbdoHassan1994 & 2016-02-22 & add files in right location \\ \hline
-% retnolaras & 2016-02-22 & Merge pull request \#25 from AbdoHassan1994/master \\ \hline
-% Daniel Mendoza & 2016-02-22 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-02-22 & master \\ \hline
-% rosiengo & 2016-02-22 & Revert ``update policy code and test'' \\ \hline
-% rosiengo & 2016-02-22 & Revert ``test'' \\ \hline
-% rosiengo & 2016-02-22 & policy \\ \hline
-% retnolaras & 2016-02-22 & Policy Test and changes on policy.java and speed limit.java \\ \hline
-% retnolaras & 2016-02-22 & add VehicleTest \\ \hline
-% rosiengo & 2016-02-23 & updated policy \\ \hline
-% rosiengo & 2016-02-23 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% Daniel Mendoza & 2016-02-24 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-02-24 & Merge pull request \#28 from rosiengo/master \\ \hline
-% AbdoHassan1994 & 2016-02-25 & update draw function \\ \hline
-% AbdoHassan1994 & 2016-02-25 & Modified UI component \\ \hline
-% rosiengo & 2016-02-25 & fixed error \\ \hline
-% rosiengo & 2016-02-25 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% rosiengo & 2016-02-25 & bugs \\ \hline
-% igalna & 2016-02-25 & Added a TestSuite class for all the Test classes from sprint 1. \\ \hline
-% igalna & 2016-02-25 & Merge remote-tracking branch `upstream/master' \\ \hline
-% retnolaras & 2016-02-25 & Merge pull request \#29 from rosiengo/master \\ \hline
-% igalna & 2016-02-26 & Merge remote-tracking branch `upstream/master' \\ \hline
-% rosiengo & 2016-02-26 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% retnolaras & 2016-02-28 & change name trafficLight to trafficLightPolicy \\ \hline
-% retnolaras & 2016-02-28 & resolve conflict \\ \hline
-% retnolaras & 2016-02-28 & add TrafficLightSection \\ \hline
-% rosiengo & 2016-02-29 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% Daniel Mendoza & 2016-02-29 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% igalna & 2016-02-29 & Merge remote-tracking branch `upstream/master' \\ \hline
-% retnolaras & 2016-03-01 & encapsulate axom \\ \hline
-% igalna & 2016-03-01 & Merge remote-tracking branch `upstream/master' \\ \hline
-% igalna & 2016-03-01 & Commit of updated ListOfListsRoadImpl \\ \hline
-% retnolaras & 2016-03-01 & Merge pull request \#30 from AbdoHassan1994/master \\ \hline
-% igalna & 2016-03-01 & Added Test class for the Junction \\ \hline
-% retnolaras & 2016-03-01 & update vehicle \\ \hline
-% igalna & 2016-03-01 & Added getVehicle method to AbstractLaneSection \\ \hline
-% retnolaras & 2016-03-01 & public \\ \hline
-% rosiengo & 2016-03-01 & GUI \\ \hline
-% rosiengo & 2016-03-01 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% igalna & 2016-03-01 & Edited ListOfListsRoadImpl to change name of setStartCoordinate \\ \hline
-% rosiengo & 2016-03-01 & gui \\ \hline
-% rosiengo & 2016-03-01 & Revert ``GUI'' \\ \hline
-% rosiengo & 2016-03-01 & Revert ``Revert''GUI``'' \\ \hline
-% rosiengo & 2016-03-01 & Revert ``Revert''Revert ``GUI''``'' \\ \hline
-% igalna & 2016-03-01 & Implementation of PrePlannedRouteJunction \\ \hline
-% igalna & 2016-03-01 & Merge remote-tracking branch `upstream/master' \\ \hline
-% rosiengo & 2016-03-01 & gui \\ \hline
-% retnolaras & 2016-03-01 & Merge pull request \#31 from igalna/master \\ \hline
-% retnolaras & 2016-03-01 & Merge pull request \#32 from rosiengo/master \\ \hline
-% rosiengo & 2016-03-01 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% retnolaras & 2016-03-01 & TrafficLightJunction \\ \hline
-% AbdoHassan1994 & 2016-03-03 & Update Car.java \\ \hline
-% rosiengo & 2016-03-03 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% retnolaras & 2016-03-03 & Merge pull request \#33 from AbdoHassan1994/patch-3 \\ \hline
-% AbdoHassan1994 & 2016-03-03 & CarPosition \\ \hline
-% AbdoHassan1994 & 2016-03-03 & Update Position.java \\ \hline
-% retnolaras & 2016-03-03 & Merge pull request \#34 from AbdoHassan1994/master \\ \hline
-% AbdoHassan1994 & 2016-03-03 & Update position \\ \hline
-% Daniel Mendoza & 2016-03-03 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-03-03 & Context and IContext commit \\ \hline
-% rosiengo & 2016-03-03 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% retnolaras & 2016-03-03 & Merge pull request \#35 from AbdoHassan1994/master \\ \hline
-% rosiengo & 2016-03-04 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% retnolaras & 2016-03-04 & Merge pull request \#36 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-03-04 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-03-04 & move traffic light to junction \\ \hline
-% Daniel Mendoza & 2016-03-04 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-03-04 & fixing syntax errors \\ \hline
-% Daniel Mendoza & 2016-03-04 & Fixing syntax errors \\ \hline
-% AbdoHassan1994 & 2016-03-04 & add relative position ( interms of lane , roadsection and road ) to the car \\ \hline
-% retnolaras & 2016-03-04 & Merge pull request \#37 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-03-04 & Merge pull request \#38 from AbdoHassan1994/patch-4 \\ \hline
-% Daniel Mendoza & 2016-03-04 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-03-04 & move method \\ \hline
-% retnolaras & 2016-03-04 & Merge pull request \#39 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-03-04 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% AbdoHassan1994 & 2016-03-04 & add functionality \\ \hline
-% retnolaras & 2016-03-04 & Merge pull request \#41 from AbdoHassan1994/patch-5 \\ \hline
-% Daniel Mendoza & 2016-03-05 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% rosiengo & 2016-03-05 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% AbdoHassan1994 & 2016-03-05 & Add LookAhead function \\ \hline
-% retnolaras & 2016-03-05 & Merge pull request \#43 from AbdoHassan1994/patch-6 \\ \hline
-% retnolaras & 2016-03-05 & edit errors + typos \\ \hline
-% AbdoHassan1994 & 2016-03-05 & Change LookAhead Impl \\ \hline
-% retnolaras & 2016-03-06 & Merge pull request \#44 from AbdoHassan1994/patch-7 \\ \hline
-% AbdoHassan1994 & 2016-03-06 & Update SimulatorEngine.java \\ \hline
-% retnolaras & 2016-03-06 & Merge pull request \#45 from AbdoHassan1994/patch-8 \\ \hline
-% rosiengo & 2016-03-06 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% rosiengo & 2016-03-06 & gui \\ \hline
-% rosiengo & 2016-03-06 & delete unused gui files \\ \hline
-% rosiengo & 2016-03-06 & gui \\ \hline
-% AbdoHassan1994 & 2016-03-06 & Update SimulatorEngine.java \\ \hline
-% retnolaras & 2016-03-06 & Merge pull request \#46 from rosiengo/master \\ \hline
-% retnolaras & 2016-03-06 & Merge pull request \#47 from AbdoHassan1994/patch-9 \\ \hline
-% AbdoHassan1994 & 2016-03-06 & update \\ \hline
-% AbdoHassan1994 & 2016-03-06 & update Driver program \\ \hline
-% retnolaras & 2016-03-06 & Merge pull request \#48 from AbdoHassan1994/patch-10 \\ \hline
-% retnolaras & 2016-03-06 & Merge pull request \#49 from AbdoHassan1994/patch-11 \\ \hline
-% rosiengo & 2016-03-07 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% retnolaras & 2016-03-07 & Merge pull request \#51 from rosiengo/master \\ \hline
-% rosiengo & 2016-03-07 & integration \\ \hline
-% retnolaras & 2016-03-07 & Merge pull request \#52 from rosiengo/master \\ \hline
-% AbdoHassan1994 & 2016-03-07 & Update SimulatorEngine.java \\ \hline
-% retnolaras & 2016-03-07 & Merge pull request \#53 from AbdoHassan1994/patch-13 \\ \hline
-% Daniel Mendoza & 2016-03-07 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-03-07 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-03-07 & update TrafficLight junction \\ \hline
-% retnolaras & 2016-03-07 & edit policy \\ \hline
-% Daniel Mendoza & 2016-03-07 & promoting Abdo's changes \\ \hline
-% rosiengo & 2016-03-07 & gui + constants \\ \hline
-% retnolaras & 2016-03-07 & Merge pull request \#54 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-03-07 & Merge pull request \#55 from rosiengo/master \\ \hline
-% rosiengo & 2016-03-07 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% Daniel Mendoza & 2016-03-07 & adding getContext method to engine \\ \hline
-% retnolaras & 2016-03-07 & Merge pull request \#56 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-03-07 & Merge pull request \#57 from rosiengo/master \\ \hline
-% retnolaras & 2016-03-07 & get context \\ \hline
-% Daniel Mendoza & 2016-03-07 & adding setRenderer \\ \hline
-% retnolaras & 2016-03-07 & Merge pull request \#58 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-03-07 & InitScreen changes \\ \hline
-% rosiengo & 2016-03-07 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% retnolaras & 2016-03-07 & Merge pull request \#59 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-03-07 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% rosiengo & 2016-03-07 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% rosiengo & 2016-03-07 & updated simulation renderer \\ \hline
-% retnolaras & 2016-03-07 & Merge pull request \#60 from rosiengo/master \\ \hline
-% AbdoHassan1994 & 2016-03-07 & fixed errors \\ \hline
-% AbdoHassan1994 & 2016-03-07 & correct position vairable \\ \hline
-% AbdoHassan1994 & 2016-03-07 & fix car ID variable passing \\ \hline
-% retnolaras & 2016-03-07 & Merge pull request \#61 from AbdoHassan1994/patch-14 \\ \hline
-% retnolaras & 2016-03-07 & Merge pull request \#62 from AbdoHassan1994/patch-15 \\ \hline
-% retnolaras & 2016-03-07 & Merge pull request \#63 from AbdoHassan1994/patch-16 \\ \hline
-% Daniel Mendoza & 2016-03-08 & set start coordinate at 35 \\ \hline
-% Daniel Mendoza & 2016-03-08 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-03-08 & Merge pull request \#64 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-03-08 & adding my change \\ \hline
-% Daniel Mendoza & 2016-03-08 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-03-08 & update TrafficLight junction \\ \hline
-% igalna & 2016-03-08 & PrePlannedRouteJunction generateSectionsOfJunction() method \\ \hline
-% Daniel Mendoza & 2016-03-08 & moving car \\ \hline
-% rosiengo & 2016-03-08 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% retnolaras & 2016-03-08 & Merge pull request \#65 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% igalna & 2016-03-08 & Merge remote-tracking branch `upstream/master' \\ \hline
-% Daniel Mendoza & 2016-03-08 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% rosiengo & 2016-03-08 & Revert ``updated simulation renderer'' \\ \hline
-% retnolaras & 2016-03-08 & Merge pull request \#67 from rosiengo/master \\ \hline
-% rosiengo & 2016-03-08 & render \\ \hline
-% rosiengo & 2016-03-08 & Revert ``render'' \\ \hline
-% AbdoHassan1994 & 2016-03-08 & Update SimulatorEngine.java \\ \hline
-% retnolaras & 2016-03-08 & Merge pull request \#68 from AbdoHassan1994/patch-17 \\ \hline
-% rosiengo & 2016-03-08 & Merge branch `master' of https://github.com/retnolaras/Traffic \\ \hline
-% igalna & 2016-03-08 & TestJunction buildJunctionWithInputWidthOneOutputWidthTwo() \\ \hline
-% igalna & 2016-03-08 & TestJunction buildJunctionWithInputWidthTwoOutputWidthOne() \\ \hline
-% igalna & 2016-03-08 & PrePlannedRouteJunction \\ \hline
-% igalna & 2016-03-08 & buildJunctionSections(int) \\ \hline
-% AbdoHassan1994 & 2016-03-09 & Update SimulatorEngine.java \\ \hline
-% Daniel Mendoza & 2016-03-09 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-03-09 & Merge pull request \#69 from AbdoHassan1994/patch-18 \\ \hline
-% Daniel Mendoza & 2016-03-09 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% igalna & 2016-03-10 & Tests for the createMappings() method of PrePlannedRouteJunction \\ \hline
-% igalna & 2016-03-10 & PrePlannedRouteJunction \\ \hline
-% igalna & 2016-03-10 & Merge remote-tracking branch `upstream/master' \\ \hline
-% igalna & 2016-03-10 & TestJunction test multiple inputs and outputs \\ \hline
-% igalna & 2016-03-10 & generateSectionsOfJunction() \\ \hline
-% igalna & 2016-03-11 & PrePLannedRouteJunction class \\ \hline
-% retnolaras & 2016-03-11 & Merge pull request \#70 from igalna/master \\ \hline
-% Daniel Mendoza & 2016-03-11 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% rosiengo & 2016-03-12 & Merge branch `master' of https://github.com/retnolaras/Traffic \\ \hline
-% rosiengo & 2016-03-14 & GUI- settings validation \\ \hline
-% retnolaras & 2016-03-14 & Merge pull request \#71 from rosiengo/master \\ \hline
-% Daniel Mendoza & 2016-03-14 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% rosiengo & 2016-03-14 & generate Maps \\ \hline
-% Daniel Mendoza & 2016-03-14 & adding getJunctionpoints to be used by the UI to draw junctions. \\ \hline
-% Daniel Mendoza & 2016-03-14 & getTrafficLights \\ \hline
-% retnolaras & 2016-03-14 & Merge pull request \#72 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% igalna & 2016-03-14 & PrePlannedRoute Junction \\ \hline
-% igalna & 2016-03-14 & Merge remote-tracking branch `upstream/master' \\ \hline
-% Daniel Mendoza & 2016-03-14 & Adding Orientation \\ \hline
-% retnolaras & 2016-03-14 & Merge pull request \#73 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-03-14 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% AbdoHassan1994 & 2016-03-14 & Update SimulatorEngine.java \\ \hline
-% retnolaras & 2016-03-14 & Merge pull request \#74 from AbdoHassan1994/patch-19 \\ \hline
-% rosiengo & 2016-03-15 & dc \\ \hline
-% rosiengo & 2016-03-15 & Revert ``generate Maps'' \\ \hline
-% rosiengo & 2016-03-15 & Revert ``Revert''generate Maps``'' \\ \hline
-% rosiengo & 2016-03-15 & Revert ``Revert''Revert ``generate Maps''``'' \\ \hline
-% rosiengo & 2016-03-15 & map \\ \hline
-% retnolaras & 2016-03-15 & Merge pull request \#75 from rosiengo/master \\ \hline
-% Daniel Mendoza & 2016-03-15 & preliminary modification to support moving through junctions \\ \hline
-% retnolaras & 2016-03-15 & change TrafficLight Colour \\ \hline
-% retnolaras & 2016-03-15 & update initscreen \\ \hline
-% rosiengo & 2016-03-15 & Merge remote-tracking branch `refs/remotes/retnolaras/master' \\ \hline
-% retnolaras & 2016-03-15 & change context \\ \hline
-% retnolaras & 2016-03-15 & add getorientation \\ \hline
-% retnolaras & 2016-03-15 & Merge pull request \#76 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-03-15 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-03-15 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% Daniel Mendoza & 2016-03-15 & Merge branch `retnolaras/master' into daniel-arturo-mendoza-patch-1 \\ \hline
-% retnolaras & 2016-03-15 & Merge pull request \#77 from daniel-arturo-mendoza/daniel-arturo-mendoza-patch-1 \\ \hline
-% rosiengo & 2016-03-15 & Merge branch `master' of https://github.com/retnolaras/Traffic \\ \hline
-% AbdoHassan1994 & 2016-03-15 & Update SimulatorEngine.java \\ \hline
 % rosiengo & 2016-03-15 & updated Map \\ \hline
 % retnolaras & 2016-03-15 & Merge pull request \#79 from rosiengo/master \\ \hline
 % retnolaras & 2016-03-15 & Merge pull request \#78 from AbdoHassan1994/patch-20 \\ \hline
@@ -1284,6 +1030,5 @@ Data based improvements involve giving the user greater control or access to the
 % retnolaras & 2016-03-24 & latex-git-log \\ \hline
 % \end{longtabu}
 % \end{center}
-
 
 \end{document} %END OF REPORT

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.4)  29 MAR 2016 17:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.2.4)  30 MAR 2016 13:50
 entering extended mode
 **./main.tex
 (main.tex
@@ -174,32 +174,40 @@ Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks18
 \minrowclearance=\skip51
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count101
+\float@exts=\toks19
+\float@box=\box27
+\@float@everytoks=\toks20
+\@floatcapt=\box28
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2016/03/15 v2.10.1 Sectioning titles
-\ttl@box=\box27
+\ttl@box=\box29
 \beforetitleunit=\skip52
 \aftertitleunit=\skip53
 \ttl@plus=\dimen125
 \ttl@minus=\dimen126
-\ttl@toksa=\toks19
+\ttl@toksa=\toks21
 \titlewidth=\dimen127
 \titlewidthlast=\dimen128
 \titlewidthfirst=\dimen129
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -236,37 +244,38 @@ LaTeX Font Info:    ... okay on input line 19.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
+\scratchcounter=\count102
 \scratchdimen=\dimen130
-\scratchbox=\box28
-\nofMPsegments=\count102
-\nofMParguments=\count103
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count104
+\scratchbox=\box30
+\nofMPsegments=\count103
+\nofMParguments=\count104
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count105
 \MPscratchDim=\dimen131
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
-\everyMPtoPDFconversion=\toks21
+\MPnumerator=\count106
+\makeMPintoPDFobject=\count107
+\everyMPtoPDFconversion=\toks23
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-Underfull \hbox (badness 2680) in paragraph at lines 30--36
+Underfull \hbox (badness 2680) in paragraph at lines 32--38
 \OT1/cmr/m/n/10.95 1530247/1 Ab-del-rah-man Hamdy
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--36
+Underfull \hbox (badness 10000) in paragraph at lines 32--38
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 36.
+(Font)              <10.95> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 36.
+(Font)              <8> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 36.
+(Font)              <6> on input line 38.
 [1
 
 {C:/Users/igaln/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (main.toc [
@@ -281,475 +290,343 @@ Missing character: There is no ™ in font cmr10!
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
+ [3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
-
-! Misplaced alignment tab character &.
-l.63 	\item Controlled Map &
-                             Road network: User can choose multiple map opti...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no ™ in font cmr10!
-[3] [4]
 
-LaTeX Warning: Citation `Pursula' on page 5 undefined on input line 153.
+[4]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136 \subsection{Project Outcome} \newline
+                                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 [5]
 
-LaTeX Warning: Citation `SewWilMer10j' on page 6 undefined on input line 160.
+LaTeX Warning: Citation `Pursula' on page 6 undefined on input line 172.
+
+Runaway argument?
+{NameUeda05Due to the prominence of purpose-specific simulators ,Name\ETC.
+! Paragraph ended before \@citex was complete.
+<to be read again> 
+                   \par 
+l.176 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 189--190
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--182
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
 
  []
 
 <usecase.jpg, id=30, 670.505pt x 419.5675pt>
 File: usecase.jpg Graphic file (type jpg)
  <use usecase.jpg>
-Package pdftex.def Info: usecase.jpg used on input line 184.
+Package pdftex.def Info: usecase.jpg used on input line 205.
 (pdftex.def)             Requested size: 455.24408pt x 284.86678pt.
 
-Overfull \hbox (36.9904pt too wide) in paragraph at lines 184--184
+Overfull \hbox (36.9904pt too wide) in paragraph at lines 205--205
 [][] 
  []
 
 [7 <./usecase.jpg>]
-! Misplaced alignment tab character &.
-l.188             \item Controlled Map &
-                                         Road network: User can choose multi...
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-
-Overfull \hbox (7.79916pt too wide) in paragraph at lines 190--191
+Overfull \hbox (7.79916pt too wide) in paragraph at lines 220--221
 []\OT1/cmr/m/n/10.95 Junction: Sim-u-late within a cross-road with 2 multi-lane
  and multi-direction
  []
 
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 279--286
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 320--320
-[]|\OT1/cmr/bx/n/10.95 Iteration
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--320
-[]|\OT1/cmr/bx/n/10.95 Iteration
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 320--320
-[]|\OT1/cmr/bx/n/10.95 Iteration
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 326--326
-[]|\OT1/cmr/m/n/10.95 Component
- []
-
-[10]
-Missing character: There is no â in font cmr10!
-Missing character: There is no € in font cmr10!
-Missing character: There is no ™ in font cmr10!
-
-Underfull \hbox (badness 10000) in paragraph at lines 385--386
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 402--404
-
- []
-
-[12]
-! Undefined control sequence.
-\enit@enditemize ->\enit@after 
-                               \endlist \ifx \enit@series \relax \else \ifnu...
-l.433 \end{itemize}
-                   .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\enit@enditemize ...x \else \ifnum \enit@resuming 
-                                                  =\@ne \enit@setresumekeys ...
-l.433 \end{itemize}
-                   .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   =
-l.433 \end{itemize}
-                   .
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Undefined control sequence.
-\enit@setresumekeys ...xpandafter {\enit@savekeys 
-                                                  }\xdef \enit@afterlist {#2...
-l.433 \end{itemize}
-                   .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\enit@setresumekeys ...it@toks }\ifnum \enit@type 
-                                                  =\z@ #3\def \enit@noexcs {...
-l.433 \end{itemize}
-                   .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   =
-l.433 \end{itemize}
-                   .
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Undefined control sequence.
-<argument> enit@resume@series@\enit@series 
-                                           
-l.433 \end{itemize}
-                   .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
-                                                  \endcsname \the \csname c@...
-l.433 \end{itemize}
-                   .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\enit@setresumekeys ...e \the \csname c@\@listctr 
-                                                  \endcsname }\fi }
-l.433 \end{itemize}
-                   .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.433 \end{itemize}
-                   .
-I'm forgetting what you said and using zero instead.
-
-! Undefined control sequence.
-\enit@enditemize ...ist \fi \ifnum \enit@resuming 
-                                                  =\thr@@ \enit@setresumekey...
-l.433 \end{itemize}
-                   .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   =
-l.433 \end{itemize}
-                   .
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Undefined control sequence.
-\enit@setresumekeys ...xpandafter {\enit@savekeys 
-                                                  }\xdef \enit@afterlist {#2...
-l.433 \end{itemize}
-                   .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\enit@setresumekeys ...it@toks }\ifnum \enit@type 
-                                                  =\z@ #3\def \enit@noexcs {...
-l.433 \end{itemize}
-                   .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   =
-l.433 \end{itemize}
-                   .
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Undefined control sequence.
-\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
-                                                  \endcsname \the \csname c@...
-l.433 \end{itemize}
-                   .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\enit@setresumekeys ...e \the \csname c@\@listctr 
-                                                  \endcsname }\fi }
-l.433 \end{itemize}
-                   .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.433 \end{itemize}
-                   .
-I'm forgetting what you said and using zero instead.
-
-
-! LaTeX Error: \begin{document} ended by \end{itemize}.
+! LaTeX Error: Too deeply nested.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.433 \end{itemize}
-                   .
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+l.255                 \item
+                            HIGH: 50\% possibility there is a new vehicle ge...
 
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.433 \end{itemize}
-                   .
-Things are pretty mixed up, but I think the worst is over.
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-[13] [14]
-Overfull \hbox (5.28487pt too wide) in paragraph at lines 479--487
+[8]
+Overfull \hbox (40.22298pt too wide) in paragraph at lines 293--330
 [][] 
  []
 
-[15] [16] [17] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 577--581
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
+[]|\OT1/cmr/bx/n/10.95 Iteration
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
+[]|\OT1/cmr/bx/n/10.95 Iteration
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
+[]|\OT1/cmr/bx/n/10.95 Iteration
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 351--351
+[]|\OT1/cmr/m/n/10.95 Component
+ []
+
+[10]
+Overfull \hbox (8.81705pt too wide) in paragraph at lines 419--424
+\OT1/cmr/m/n/10.95 This project was de-vel-oped in Java. We de-cided to use Mod
+el-View-Controller(MVC)
+ []
+
+[11]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 447--448
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 464--466
+
+ []
+
+<Picture3.png, id=50, 596.9502pt x 225.4824pt>
+File: Picture3.png Graphic file (type png)
+ <use Picture3.png>
+Package pdftex.def Info: Picture3.png used on input line 481.
+(pdftex.def)             Requested size: 398.33858pt x 150.46342pt.
+ [13 <./Picture3.png>] [14]
+
+! LaTeX Error: File `flowchart' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.520     \includegraphics[scale=.2]{flowchart}
+                                               
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[15] [16] [17]
+Overfull \hbox (5.28487pt too wide) in paragraph at lines 573--581
+[][] 
+ []
+
+[18] [19] [20]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.628 ...sts - \textbf {\textit{FAIL}} \rightarrow
+                                                   Write code - Run Tests - ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.629 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.629 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.629 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[21] [22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 676--680
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 586--587
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 590--592
+Underfull \hbox (badness 10000) in paragraph at lines 689--691
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 599--601
+Underfull \hbox (badness 10000) in paragraph at lines 698--700
 
  []
 
-[19]
-Underfull \hbox (badness 10000) in paragraph at lines 602--604
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 614--615
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 701--703
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 616--618
-
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 625--626
+Underfull \hbox (badness 10000) in paragraph at lines 713--714
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--629
+Underfull \hbox (badness 10000) in paragraph at lines 715--717
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 724--725
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 634--635
+Underfull \hbox (badness 10000) in paragraph at lines 726--728
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--638
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 645--646
+Underfull \hbox (badness 10000) in paragraph at lines 735--737
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 647--649
-
- []
-
-[21]
-Underfull \hbox (badness 10000) in paragraph at lines 654--655
+Underfull \hbox (badness 10000) in paragraph at lines 744--745
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 657--659
+Underfull \hbox (badness 10000) in paragraph at lines 746--748
 
  []
 
-[22] (main.bbl
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 753--754
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 756--758
+
+ []
+
+[27] (main.bbl
 Overfull \hbox (138.0191pt too wide) in paragraph at lines 30--33
 []\OT1/cmr/m/n/10.95 Kelly Liu.  phy-edu-traffic-simulation http://www.phy.ntnu
 .edu.tw/oldjava/others/trafficsimulation/applet.html. 
  []
 
-) [23] <Picture1.png, id=85, 480.8364pt x 489.9906pt>
+) [28] <Picture1.png, id=105, 480.8364pt x 489.9906pt>
 File: Picture1.png Graphic file (type png)
  <use Picture1.png>
-Package pdftex.def Info: Picture1.png used on input line 705.
+Package pdftex.def Info: Picture1.png used on input line 803.
 (pdftex.def)             Requested size: 188.21288pt x 191.79836pt.
 
-<Picture2.png, id=87, 715.9548pt x 336.7782pt>
+<Picture2.png, id=106, 715.9548pt x 336.7782pt>
 File: Picture2.png Graphic file (type png)
  <use Picture2.png>
-Package pdftex.def Info: Picture2.png used on input line 711.
+Package pdftex.def Info: Picture2.png used on input line 809.
 (pdftex.def)             Requested size: 188.21288pt x 88.5315pt.
-
-<Picture3.png, id=88, 596.9502pt x 225.4824pt>
 File: Picture3.png Graphic file (type png)
- <use Picture3.png>
-Package pdftex.def Info: Picture3.png used on input line 717.
+
+<use Picture3.png>
+Package pdftex.def Info: Picture3.png used on input line 815.
 (pdftex.def)             Requested size: 188.21288pt x 71.0927pt.
-
-<Picture4.png, id=89, 356.532pt x 542.025pt>
+ <Picture4.png, id=107, 356.532pt x 542.025pt>
 File: Picture4.png Graphic file (type png)
- <use Picture4.png>
-Package pdftex.def Info: Picture4.png used on input line 723.
+
+<use Picture4.png>
+Package pdftex.def Info: Picture4.png used on input line 821.
 (pdftex.def)             Requested size: 227.63022pt x 170.71396pt.
-
-<Picture5.png, id=90, 882.1758pt x 463.9734pt>
+ <Picture5.png, id=108, 882.1758pt x 463.9734pt>
 File: Picture5.png Graphic file (type png)
- <use Picture5.png>
-Package pdftex.def Info: Picture5.png used on input line 729.
-(pdftex.def)             Requested size: 188.21288pt x 98.98773pt.
 
-<Picture6.png, id=91, 370.986pt x 348.3414pt>
+<use Picture5.png>
+Package pdftex.def Info: Picture5.png used on input line 827.
+(pdftex.def)             Requested size: 188.21288pt x 98.98773pt.
+ <Picture6.png, id=109, 370.986pt x 348.3414pt>
 File: Picture6.png Graphic file (type png)
- <use Picture6.png>
-Package pdftex.def Info: Picture6.png used on input line 735.
+
+<use Picture6.png>
+Package pdftex.def Info: Picture6.png used on input line 833.
 (pdftex.def)             Requested size: 188.21288pt x 176.72159pt.
 
-Overfull \hbox (237.70226pt too wide) in paragraph at lines 699--737
+Overfull \hbox (237.70226pt too wide) in paragraph at lines 797--835
 [][] 
  []
 
 
-LaTeX Warning: Float too large for page by 52.3037pt on input line 739.
+LaTeX Warning: Float too large for page by 52.3037pt on input line 837.
 
-[24] [25 <./Picture1.png> <./Picture2.png> <./Picture3.png> <./Picture4.png> <.
-/Picture5.png> <./Picture6.png>] (main.aux)
+[29] [30 <./Picture1.png> <./Picture2.png> <./Picture4.png> <./Picture5.png> <.
+/Picture6.png>] (main.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4477 strings out of 493634
- 65727 string characters out of 3141315
- 152188 words of memory out of 3000000
- 7823 multiletter control sequences out of 15000+200000
+ 4539 strings out of 493634
+ 66457 string characters out of 3141315
+ 155592 words of memory out of 3000000
+ 7870 multiletter control sequences out of 15000+200000
  9507 words of font info for 33 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 44i,17n,49p,938b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,17n,49p,1494b,486s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (26 pages, 721052 bytes).
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (31 pages, 746271 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
+ 152 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

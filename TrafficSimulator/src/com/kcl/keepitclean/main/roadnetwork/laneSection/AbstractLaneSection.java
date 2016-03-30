@@ -19,6 +19,7 @@ public abstract class AbstractLaneSection implements LaneSection {
 	final private boolean OPEN = true;
 	private int junctionGridIndex = 0;
 	
+
 	private Vehicle vehicleOnSection;
 	
 	@Override

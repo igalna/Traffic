@@ -15,8 +15,8 @@ import com.kcl.keepitclean.main.vehicle.Vehicle;
 public abstract class AbstractLaneSection implements LaneSection {
 
 	// In any direction a lane can either be open or closed
-	private boolean closed = false;
-	private boolean open = true;
+	final private boolean CLOSED = false;
+	final private boolean OPEN = true;
 	private int junctionGridIndex = 0;
 	
 	private Vehicle vehicleOnSection;
@@ -31,11 +31,11 @@ public abstract class AbstractLaneSection implements LaneSection {
 	}
 	
 	public boolean getOpen() {
-		return open;
+		return OPEN;
 	}
 	
 	public boolean getClosed() {
-		return closed;
+		return CLOSED;
 	}
 	
 	@Override
